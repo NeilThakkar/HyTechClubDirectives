@@ -39,8 +39,8 @@ You can add a shadow, round the corners, or change the colors.
 * Add a button to the bottom of your todo-list component's template (todo-list.component.html)
 
 * Connect this button to a function in your component's typescript file (todo-list.component.ts)
-* Define the function in your component's typescript file to alter the "show_completed" variable within your todo-list component.
-When show_completed = true, it should show all tasks. When show_completed = false, it should only show *incomplete* tasks
+* Define the function in your component's typescript file to alter the `show_completed` variable within your todo-list component.
+When `show_completed == true`, it should show all tasks. When `show_completed == false`, it should only show *incomplete* tasks
 * **BONUS: Alter the button's label to change between "Show Completed Tasks" & "Hide Completed Tasks"**
     * This should depend on whether completed tasks are displaying on the screen or not.
     * **I.E.** When the UI is showing only incomplete tasks, the button should say "Show Completed Tasks".
