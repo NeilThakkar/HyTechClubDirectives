@@ -1,0 +1,15 @@
+<label> To Do List: </label>
+<div *ngFor="let todoItem of allTodos">
+  <div *ngIf="!todoItem.complete">
+  <input type="checkbox" [(ngModel)]="todoItem.complete"> {{ todoItem.description}}
+   </div>
+</div>
+<div>
+  <input type="text" placeholder="Enter Task Description" [(ngModel)]="newTask" />
+</div>
+<button (click)="clickAddTask()">
+  Add Task
+</button>
+<button (click)="clickShowCompleted">
+  Show All Completed Tasks
+</button>
